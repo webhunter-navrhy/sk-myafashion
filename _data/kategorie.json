@@ -1,0 +1,22 @@
+[
+  {
+    "nazev": "Dámska móda",
+    "popis": "Šaty, sukne, topy, nohavice, overaly, kabáty a bundy.",
+    "foto": "saty-party.jpg"
+  },
+  {
+    "nazev": "Dámske topánky",
+    "popis": "Lodičky, tenisky, čižmy aj sandále.",
+    "foto": "lodicky.jpg"
+  },
+  {
+    "nazev": "Dámske kabelky",
+    "popis": "Kabelky a doplnky k outfitu.",
+    "foto": "kabelka.jpg"
+  },
+  {
+    "nazev": "Pánska móda",
+    "popis": "Tričká, košele, rifle, svetre, bundy, topánky a doplnky.",
+    "foto": "kozuch.jpg"
+  }
+]

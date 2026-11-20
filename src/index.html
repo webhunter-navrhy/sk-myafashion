@@ -1,0 +1,88 @@
+{% extends "_base.html" %}
+{% set titulek = 'Mya Fashion – dámska a pánska móda, Bratislava' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="nadpis-maly">Dámska a pánska móda</p>
+      <h1>Móda, v ktorej sa budete cítiť <em>sami sebou</em></h1>
+      <p class="uvod">Šaty, topánky, kabelky aj pánske oblečenie. Niečo iné, netradičné a neopozerané.</p>
+      <p class="hero-cta"><a class="tlacitko" href="https://www.myafashion.sk/" rel="noopener">Do e-shopu</a><a class="odkaz" href="#kolekcia">Pozrieť kolekciu</a></p>
+    </div>
+    <figure class="hero-foto">
+      {{ img('hero.jpg', 'Čipkované krémové šaty s dlhým rukávom z ponuky Mya Fashion', sizes='(min-width: 60rem) 38rem, 90vw') }}
+    </figure>
+  </div>
+</section>
+
+<section class="sekce" id="kolekcia">
+  <div class="wrap">
+    <p class="nadpis-maly">Z našej ponuky</p>
+    <h2>Vybrali sme pre Vás</h2>
+    <ul role="list" class="vesiak">
+      {% for p in [
+        ('saty-koralove.jpg','Koralové luxusné čipkované šaty'),
+        ('saty-maxi.jpg','Maxi šaty s čipkou a korzetovým detailom'),
+        ('saty-party.jpg','Hnedé flitrové party šaty'),
+        ('lodicky.jpg','Dámske lodičky burgundy'),
+        ('kabelka.jpg','Ťavia kabelka'),
+        ('tenisky.jpg','Červené kožené tenisky'),
+        ('kozuch.jpg','Hnedý kožuch')] %}
+      <li><a href="https://www.myafashion.sk/" rel="noopener">
+        <span class="rama">{{ img(p[0], p[1]) }}</span>
+        <span class="popis">{{ p[1] }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tmava" id="kategorie">
+  <div class="wrap">
+    <p class="nadpis-maly">Kategórie</p>
+    <h2>Nájdite svoj štýl</h2>
+    <ul role="list" class="kategorie">
+      {% for k in data.kategorie %}
+      <li><a href="https://www.myafashion.sk/" rel="noopener">
+        <span class="rama">{{ img(k.foto, '') }}</span>
+        <h3>{{ k.nazev }}</h3><p>{{ k.popis }}</p></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="o-nas">
+  <div class="wrap o-nas">
+    <div>
+      <p class="nadpis-maly">O nás</p>
+      <h2>Módu milujeme</h2>
+    </div>
+    <div class="text">
+      <p>Ponúkame dámsku módu, ako ju nepoznáte. Zaujímavú, miestami extravagantnú, trendovú, nadčasovú alebo aj „futuristickú“, ktorá okorení Váš šatník.</p>
+      <p>To isté platí pre pánov: štýlové oblečenie nie je len výsadou žien. Nájdu u nás pánsku módu, ktorá ich ukáže ako moderných mužov.</p>
+      <p class="podpis">Milé dámy, dievčatá, páni: let’s go to be fashion star!</p>
+      <ul role="list" class="info">
+        <li><a href="https://www.myafashion.sk/" rel="noopener">Ako nakupovať</a></li>
+        <li><a href="https://www.myafashion.sk/" rel="noopener">Poštovné a doprava</a></li>
+        <li><a href="https://www.myafashion.sk/" rel="noopener">Veľkostné tabuľky</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce kontakt-sekce" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <p class="nadpis-maly">Kontakt</p>
+      <h2>Napíšte nám</h2>
+      <address>
+        <strong>Mya Design SK s.r.o.</strong><br>
+        Račianska 109/B<br>831 02 Bratislava<br>
+        <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>
+      </address>
+      <p class="siete"><a href="https://www.facebook.com/myafashion.sk" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/myafashion.sk/" rel="noopener">Instagram</a></p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

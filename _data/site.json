@@ -1,0 +1,54 @@
+{
+  "slug": "sk-myafashion",
+  "nazev": "Mya Fashion",
+  "url": "https://webhunter-navrhy.github.io/sk-myafashion/",
+  "base": "/sk-myafashion/",
+  "lang": "sk",
+  "popis": "Dámska a pánska móda v e-shope Mya Fashion: šaty, topánky, kabelky, kabáty a pánske oblečenie. Bratislava.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "logo.jpg",
+  "theme_color": "#232739",
+  "typ": "OnlineStore",
+  "ico": "45669015",
+  "kontakt": {
+    "email": "info@myafashion.sk",
+    "telefon": "",
+    "adresa": {
+      "ulice": "Račianska 109/B",
+      "psc": "831 02",
+      "mesto": "Bratislava",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [
+    "https://www.facebook.com/myafashion.sk",
+    "https://www.instagram.com/myafashion.sk/"
+  ],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Správa z webu"
+  },
+  "nav": [
+    {
+      "text": "Kolekcia",
+      "href": "#kolekcia"
+    },
+    {
+      "text": "Kategórie",
+      "href": "#kategorie"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}
