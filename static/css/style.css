@@ -123,3 +123,8 @@ address{font-style:normal;margin-top:var(--space-3);line-height:1.8}
 .paticka{background:var(--text);color:#c3c6d3;padding-block:var(--space-4);font-size:.9rem}
 .paticka .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between}
 .tmava h2,#kolekcia h2{margin-bottom:var(--space-3)} .kategorie{margin-top:var(--space-3)} .vesiak{margin-top:var(--space-3)}
+.hero-foto::after{inset:.8rem .8rem -.8rem -.8rem}
+@media(min-width:60rem){.hero-foto::after{inset:1.2rem -1.2rem -1.2rem 1.2rem}}
+.kategorie{grid-template-columns:repeat(auto-fit,minmax(9rem,1fr))}
+@media(min-width:60rem){.kategorie{grid-template-columns:repeat(4,1fr)}}
+.vesiak li:nth-child(5) .rama img{aspect-ratio:3/4}
